@@ -1,5 +1,3 @@
-# Insightful-Git-Commands-Notes-
-
 On GitHub, saved changes are called commits.
 
 
@@ -22,7 +20,9 @@ git push -u origin main/master
 
 To create a main branch:
 
-git branch -M main 
+```
+git branch -M main
+```
 
 To clone a repo from GitHub:
 ```
