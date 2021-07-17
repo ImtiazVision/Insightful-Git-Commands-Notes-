@@ -1,7 +1,7 @@
 On GitHub, saved changes are called commits.
 
 
-Core initial Commands
+**Core initial Commands**
 ```
  git init 
 ```
