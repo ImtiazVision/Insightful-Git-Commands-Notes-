@@ -19,7 +19,6 @@ git push -u origin main/master
 ```
 
 To create a main branch:
-
 ```
 git branch -M main
 ```
@@ -89,7 +88,7 @@ git checkout master
 git merge tmp
 ```
  from the master branch. You should be on the master branch after running git checkout master.
-_________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________
 
 
 ```
@@ -125,20 +124,28 @@ Then we perform git push to submit the code
 git push -u origin master
 ```
 
+_______________________________________________________________________________________________
 
-This is important when git refuses to merge unrelated histories
+This is important when git refuses to merge unrelated histories: 
+
 ```
 git merge --allow-unrelated-histories branch-name-to-be-merged
 ```
 
 ```
-git pull --allow-unrelated-histories origin master
+git pull --allow-unrelated-histories origin master/main
 
-git push -u origin master
+git push -u origin master/main
 ```
 
+Alternately, We can solve this same merge conflict problem with following command  and this is the easier way 👇👇👇👇👇
 
-Create a new repository on the command line
+The “fatal: refusing to merge unrelated histories” Git error can be solved by this command:
+
+git pull origin master/main --allow-unrelated-histories
+_______________________________________________________________________________________________
+
+To Create a new repository on the command line:
 
 ```
 echo "# HTML-CSS-Practice" >> README.md 
@@ -206,7 +213,8 @@ Each developer will work in their local repository but eventually, they will pus
 
 First We need to initialize a repo by following command:
 
-							- [ ] git init 
+```git init```
+	
 After creating a new repository on GitHub, we can follow these steps:
 
 Step 1:
@@ -283,7 +291,7 @@ Each person creates a branch for the feature or bug-fix they are working on and 
 In Git, if you want to make your local repository reflect changes that have been made in a remote (tracked) repository, you should run the pull command.
 
 
-                                                                       Pull Request 
+                                                                       ## Pull Request 
 
 
 Pull requests are a mechanism for a developer to notify team members that they have made some changes or completed a feature.
@@ -314,7 +322,7 @@ You need to provide 4 pieces of information to file a pull request:
 - Destination repository
 - Destination branch
 
-								    Merging
+								    ## Merging
 
 I guess you know combining something to form a single entity is what Merge means.
 
@@ -343,7 +351,7 @@ Merge takes two commit pointers, usually the branch tips, and will find a common
 Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequence.
 
 
-						Configure and setting up Git user account 
+						## Configuring and setting up Git user account 
 
 Command:
 
@@ -445,5 +453,4 @@ Command:
 
 
 This command creates a new branch and also switches to it.
-
 
