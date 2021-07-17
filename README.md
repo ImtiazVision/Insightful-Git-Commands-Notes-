@@ -18,16 +18,16 @@ git commit  -m "message"
 git push -u origin main/master
 ```
 
-To create a main branch:
+**To create a main branch:**
 ```
 git branch -M main
 ```
 
-To clone a repo from GitHub:
+**To clone a repo from GitHub:**
 ```
 git clone [url]
 ```
-To move/navigate to a branch:
+**To move/navigate to a branch:**
 ```
 git checkout -b [branch name]
 ```
@@ -35,16 +35,16 @@ git checkout -b [branch name]
 ```
 git pull origin main/master
 ```
-To add remote repo to local computer:
+**To add remote repo to local computer:**
 ```
 git remote add origin [repository url]
 ```
-To check the remote version of the repo
+**To check the remote version of the repo**
 ```
 git remote -v
 ```
 
-Troubleshooting commands
+**Troubleshooting commands**
 _______________________________________________________________________________________________
 You can always use the reflog as well. git reflog  will display any change which updated the HEAD and checking out the desired reflog entry will set the HEAD back to this commit.
 Every time the HEAD is modified there will be a new entry in the reflog
@@ -138,14 +138,14 @@ git pull --allow-unrelated-histories origin master/main
 git push -u origin master/main
 ```
 
-Alternately, We can solve this same merge conflict problem with following command  and this is the easier way 👇👇👇👇👇
+**Alternately, We can solve this same merge conflict problem with following command  and this is the easier way 👇👇👇👇👇**
 
-The “fatal: refusing to merge unrelated histories” Git error can be solved by this command:
+**The “fatal: refusing to merge unrelated histories” Git error can be solved by this command:**
 
 git pull origin master/main --allow-unrelated-histories
 _______________________________________________________________________________________________
 
-To Create a new repository on the command line:
+**To Create a new repository on the command line:**
 
 ```
 echo "# HTML-CSS-Practice" >> README.md 
@@ -245,10 +245,8 @@ In order to push all the code from the local repository into the remote reposito
 
 This pushes the code from the master branch in the local repository to the master branch in the remote repository.
 
-
-						# Branching
-								
-
+						**Branching**
+							
 What if Rob made some changes in the script and the next day Sam erased those changes to make his new update?
 
 
@@ -291,7 +289,7 @@ Each person creates a branch for the feature or bug-fix they are working on and 
 In Git, if you want to make your local repository reflect changes that have been made in a remote (tracked) repository, you should run the pull command.
 
 
-                                     # Pull Request 
+                                     			**Pull Request** 
 
 
 Pull requests are a mechanism for a developer to notify team members that they have made some changes or completed a feature.
@@ -322,7 +320,7 @@ You need to provide 4 pieces of information to file a pull request:
 - Destination repository
 - Destination branch
 
-								   # Merging
+								  	 **Merging**
 
 I guess you know combining something to form a single entity is what Merge means.
 
@@ -351,7 +349,7 @@ Merge takes two commit pointers, usually the branch tips, and will find a common
 Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequence.
 
 
-						# Configuring and setting up Git user account 
+							**Configuring and setting up Git user account** 
 
 Command:
 
